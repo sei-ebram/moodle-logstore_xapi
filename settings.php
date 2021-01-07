@@ -51,6 +51,10 @@ if ($hassiteconfig) {
         get_string('sendidnumber', 'logstore_xapi'),
         get_string('sendidnumber_desc', 'logstore_xapi'), 0));
 
+    $settings->add(new admin_setting_configcheckbox('logstore_xapi/coursecategory',
+        get_string('coursecategory', 'logstore_xapi'),
+        get_string('coursecategory_desc', 'logstore_xapi'), 0));
+
     $settings->add(new admin_setting_configcheckbox('logstore_xapi/send_jisc_data',
         get_string('send_jisc_data', 'logstore_xapi'),
         get_string('send_jisc_data_desc', 'logstore_xapi'), 0));
